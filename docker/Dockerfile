@@ -8,6 +8,6 @@ RUN pip3 install -e .
 
 ENV SHELL=/bin/bash
 
-RUN create_alias test 0
+RUN create_alias test ls
 
-CMD test
+CMD ["test", "exit 0"]
